@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Estilos de la scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+    /* Ancho de la scrollbar */
+  }
+  
+  /* Estilo del track (fondo de la scrollbar) */
+  ::-webkit-scrollbar-track {
+    background-color: #d4d1d1;
+    /* Color de fondo del track */
+  }
+  
+  /* Estilo del thumb (el deslizador de la scrollbar) */
+  ::-webkit-scrollbar-thumb {
+    background-color: #888;
+    /* Color del thumb */
+    border-radius: 4px;
+    /* Borde redondeado del thumb */
+  }
+  
+  /* Estilo del thumb al pasar el mouse por encima */
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: #555;
+    /* Color del thumb al pasar el mouse por encima */
+  }
+  
+  
+  
+  .box {
+    @apply mb-10 md:mb-16 lg:mb-24 mx-3 md:mx-10
+  }
+  
+  .pulse {
+    @apply transition-all duration-300
+  }
